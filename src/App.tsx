@@ -3,11 +3,13 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import { Toaster } from '@/components/ui/toaster';
 import Header from '@/components/common/Header';
 import Footer from '@/components/common/Footer';
+import BackgroundVideo from '@/components/common/BackgroundVideo';
 import routes from './routes';
 
 const App: React.FC = () => {
   return (
     <Router>
+      <BackgroundVideo />
       <div className="flex flex-col min-h-screen">
         <Header />
         <main className="flex-grow">

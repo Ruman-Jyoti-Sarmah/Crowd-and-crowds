@@ -37,7 +37,7 @@ const Header: React.FC = () => {
               <UtensilsCrossed className="w-8 h-8 text-primary" />
             </motion.div>
             <span className="text-2xl font-bold gradient-text">
-              Modern Restaurant
+              Crowd and Crowds
             </span>
           </Link>
 
@@ -49,7 +49,7 @@ const Header: React.FC = () => {
                 className={`relative px-4 py-2 text-base font-medium smooth-transition ${
                   location.pathname === item.path
                     ? "text-primary"
-                    : "text-foreground hover:text-primary"
+                    : "text-white hover:text-primary"
                 }`}
               >
                 {item.name}
@@ -101,7 +101,7 @@ const Header: React.FC = () => {
                   className={`block px-4 py-3 rounded-lg text-base font-medium smooth-transition ${
                     location.pathname === item.path
                       ? "bg-primary text-primary-foreground"
-                      : "hover:bg-muted"
+                      : "text-white hover:bg-muted"
                   }`}
                 >
                   {item.name}

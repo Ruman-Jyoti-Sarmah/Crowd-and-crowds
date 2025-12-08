@@ -2,7 +2,6 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import { Heart, Award, Users, Leaf } from "lucide-react";
-import BackgroundVideo from "@/components/common/BackgroundVideo";
 
 interface TimelineEvent {
   year: string;
@@ -38,7 +37,7 @@ const About: React.FC = () => {
       description: "Introduced our innovative tasting menu featuring molecular gastronomy",
     },
     {
-      year: "2024",
+      year: "2025",
       title: "Today",
       description: "Continuing to push boundaries while honoring culinary traditions",
     },
@@ -69,7 +68,6 @@ const About: React.FC = () => {
 
   return (
     <div className="min-h-screen pt-32 pb-20">
-      <BackgroundVideo opacity={0.15} />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -78,7 +76,7 @@ const About: React.FC = () => {
           className="text-center mb-16"
         >
           <h1 className="text-5xl xl:text-6xl font-bold mb-4 max-sm:text-4xl">
-            About <span className="gradient-text">Us</span>
+            <span className="text-white">About</span> <span className="gradient-text">Us</span>
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto max-sm:text-lg">
             Discover the story behind our passion for exceptional cuisine
@@ -97,10 +95,10 @@ const About: React.FC = () => {
               <div className="grid grid-cols-1 xl:grid-cols-2">
                 <div className="p-12">
                   <h2 className="text-3xl xl:text-4xl font-bold mb-6 max-sm:text-2xl">
-                    Our <span className="gradient-text">Story</span>
+                    <span className="text-white">Our</span> <span className="gradient-text">Story</span>
                   </h2>
                   <p className="text-lg text-muted-foreground mb-4">
-                    Modern Restaurant was born from a simple dream: to create a dining experience that transcends the ordinary. 
+                    Crowd and crowds was born from a simple dream: to create a dining experience that transcends the ordinary. 
                     Founded in 2010 by Chef Marcus Chen, our restaurant has become a beacon of culinary innovation and excellence.
                   </p>
                   <p className="text-lg text-muted-foreground mb-4">
@@ -132,7 +130,7 @@ const About: React.FC = () => {
           className="mb-20"
         >
           <h2 className="text-4xl xl:text-5xl font-bold text-center mb-12 max-sm:text-3xl">
-            Our <span className="gradient-text">Values</span>
+            <span className="text-white">Our</span> <span className="gradient-text">Values</span>
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
             {values.map((value, index) => (
@@ -168,7 +166,7 @@ const About: React.FC = () => {
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-4xl xl:text-5xl font-bold text-center mb-12 max-sm:text-3xl">
-            Our <span className="gradient-text">Journey</span>
+            <span className="text-white">Our</span> <span className="gradient-text">Journey</span>
           </h2>
           <div className="relative">
             <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-border hidden xl:block" />

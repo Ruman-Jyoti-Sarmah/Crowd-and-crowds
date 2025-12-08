@@ -2,7 +2,6 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import { ChefHat, Award, Users } from "lucide-react";
-import BackgroundVideo from "@/components/common/BackgroundVideo";
 
 interface TeamMember {
   id: number;
@@ -61,7 +60,6 @@ const Team: React.FC = () => {
 
   return (
     <div className="min-h-screen pt-32 pb-20">
-      <BackgroundVideo opacity={0.15} />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -70,7 +68,7 @@ const Team: React.FC = () => {
           className="text-center mb-16"
         >
           <h1 className="text-5xl xl:text-6xl font-bold mb-4 max-sm:text-4xl">
-            Meet Our <span className="gradient-text">Team</span>
+            <span className="text-white">Meet Our</span> <span className="gradient-text">Team</span>
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto max-sm:text-lg">
             Our talented chefs and staff are dedicated to creating exceptional culinary experiences

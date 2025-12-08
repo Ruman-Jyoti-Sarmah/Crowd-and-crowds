@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import BackgroundVideo from "@/components/common/BackgroundVideo";
 
 interface GalleryImage {
   id: number;
@@ -91,7 +90,6 @@ const Gallery: React.FC = () => {
 
   return (
     <div className="min-h-screen pt-32 pb-20">
-      <BackgroundVideo opacity={0.15} />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -100,7 +98,7 @@ const Gallery: React.FC = () => {
           className="text-center mb-12"
         >
           <h1 className="text-5xl xl:text-6xl font-bold mb-4 max-sm:text-4xl">
-            Our <span className="gradient-text">Gallery</span>
+            <span className="text-white">Our</span> <span className="gradient-text">Gallery</span>
           </h1>
           <p className="text-xl text-muted-foreground max-sm:text-lg">
             A visual journey through our culinary creations and ambiance

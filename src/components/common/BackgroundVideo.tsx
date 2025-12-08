@@ -8,9 +8,9 @@ interface BackgroundVideoProps {
 }
 
 const BackgroundVideo: React.FC<BackgroundVideoProps> = ({
-  videoUrl,
-  opacity = 0.15,
-  overlay = true,
+  videoUrl = `${import.meta.env.BASE_URL}videos/background.mp4`,
+  opacity = 1,
+  overlay = false,
 }) => {
   return (
     <div className="fixed inset-0 -z-10 overflow-hidden">

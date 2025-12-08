@@ -7,7 +7,6 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
-import BackgroundVideo from "@/components/common/BackgroundVideo";
 
 const Contact: React.FC = () => {
   const { toast } = useToast();
@@ -27,12 +26,12 @@ const Contact: React.FC = () => {
     {
       icon: Phone,
       title: "Phone",
-      content: "(555) 123-4567",
+      content: "+91 8638144013",
     },
     {
       icon: Mail,
       title: "Email",
-      content: "info@modernrestaurant.com",
+      content: "crowdandcrowds@gmail.com",
     },
     {
       icon: Clock,
@@ -77,7 +76,6 @@ const Contact: React.FC = () => {
 
   return (
     <div className="min-h-screen pt-32 pb-20">
-      <BackgroundVideo opacity={0.15} />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -86,7 +84,7 @@ const Contact: React.FC = () => {
           className="text-center mb-12"
         >
           <h1 className="text-5xl xl:text-6xl font-bold mb-4 max-sm:text-4xl">
-            Contact <span className="gradient-text">Us</span>
+            <span className="text-white">Contact</span> <span className="gradient-text">Us</span>
           </h1>
           <p className="text-xl text-muted-foreground max-sm:text-lg">
             We'd love to hear from you. Get in touch with us today!

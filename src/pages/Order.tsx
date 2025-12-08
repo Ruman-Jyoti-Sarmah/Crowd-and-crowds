@@ -6,7 +6,6 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { useToast } from "@/hooks/use-toast";
-import BackgroundVideo from "@/components/common/BackgroundVideo";
 
 interface MenuItem {
   id: number;
@@ -128,7 +127,6 @@ const Order: React.FC = () => {
 
   return (
     <div className="min-h-screen pt-32 pb-20">
-      <BackgroundVideo opacity={0.15} />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -137,7 +135,7 @@ const Order: React.FC = () => {
           className="text-center mb-12"
         >
           <h1 className="text-5xl xl:text-6xl font-bold mb-4 max-sm:text-4xl">
-            Order <span className="gradient-text">Online</span>
+            <span className="text-white">Order</span> <span className="gradient-text">Online</span>
           </h1>
           <p className="text-xl text-muted-foreground max-sm:text-lg">
             Select your favorite dishes and place your order
@@ -165,7 +163,7 @@ const Order: React.FC = () => {
                 <CardContent className="p-6">
                   <div className="flex justify-between items-start mb-4">
                     <h3 className="text-xl font-semibold">{item.name}</h3>
-                    <span className="text-2xl font-bold text-primary">${item.price}</span>
+                    <span className="text-2xl font-bold text-primary">₹{item.price}</span>
                   </div>
                   <Button
                     onClick={() => addToCart(item)}
@@ -257,7 +255,7 @@ const Order: React.FC = () => {
                                   <div className="flex-1">
                                     <h3 className="font-semibold mb-1">{item.name}</h3>
                                     <p className="text-primary font-bold mb-2">
-                                      ${item.price}
+                                      ₹{item.price}
                                     </p>
                                     <div className="flex items-center gap-2">
                                       <Button
@@ -317,7 +315,7 @@ const Order: React.FC = () => {
                             <div className="flex justify-between text-lg font-semibold mb-4">
                               <span>Total:</span>
                               <span className="text-primary text-2xl">
-                                ${getTotalPrice().toFixed(2)}
+                                ₹{getTotalPrice().toFixed(2)}
                               </span>
                             </div>
                             <Button

@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import { Star, ShoppingCart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import BackgroundVideo from "@/components/common/BackgroundVideo";
 
 type Category = "all" | "starters" | "main" | "drinks" | "desserts";
 
@@ -34,7 +33,7 @@ const Menu: React.FC = () => {
       id: 1,
       name: "Caesar Salad",
       description: "Fresh romaine lettuce with parmesan and croutons",
-      price: "$12",
+      price: "₹12",
       image: "https://miaoda-site-img.s3cdn.medo.dev/images/3438882a-505e-4e2b-aa2f-161dcdb3e46d.jpg",
       category: "starters",
       rating: 4.6,
@@ -43,7 +42,7 @@ const Menu: React.FC = () => {
       id: 2,
       name: "Grilled Steak",
       description: "Premium beef steak with seasonal vegetables",
-      price: "$32",
+      price: "₹32",
       image: "https://miaoda-site-img.s3cdn.medo.dev/images/601295dc-01ca-49e7-ace4-c408689216b6.jpg",
       category: "main",
       rating: 4.9,
@@ -52,7 +51,7 @@ const Menu: React.FC = () => {
       id: 3,
       name: "Fresh Sushi Platter",
       description: "Assorted sushi with wasabi and soy sauce",
-      price: "$28",
+      price: "₹28",
       image: "https://miaoda-site-img.s3cdn.medo.dev/images/69177eab-b3e7-4d25-87f1-96f5b9960f9a.jpg",
       category: "main",
       rating: 4.8,
@@ -61,7 +60,7 @@ const Menu: React.FC = () => {
       id: 4,
       name: "Pasta Carbonara",
       description: "Creamy pasta with bacon and parmesan",
-      price: "$24",
+      price: "₹24",
       image: "https://miaoda-site-img.s3cdn.medo.dev/images/6a8c51fc-e57d-4019-8f5a-261ad58864e1.jpg",
       category: "main",
       rating: 4.7,
@@ -70,7 +69,7 @@ const Menu: React.FC = () => {
       id: 5,
       name: "Chocolate Lava Cake",
       description: "Warm chocolate cake with molten center",
-      price: "$10",
+      price: "₹10",
       image: "https://miaoda-site-img.s3cdn.medo.dev/images/0d75e6a3-13b9-4ac6-85b4-3c63fa5bdb49.jpg",
       category: "desserts",
       rating: 4.9,
@@ -79,7 +78,7 @@ const Menu: React.FC = () => {
       id: 6,
       name: "Tiramisu",
       description: "Classic Italian coffee-flavored dessert",
-      price: "$9",
+      price: "₹9",
       image: "https://miaoda-site-img.s3cdn.medo.dev/images/737da2b1-cf0e-47e7-b61d-4b2449ffb9dc.jpg",
       category: "desserts",
       rating: 4.8,
@@ -88,7 +87,7 @@ const Menu: React.FC = () => {
       id: 7,
       name: "Grilled Chicken",
       description: "Tender chicken breast with fresh vegetables",
-      price: "$22",
+      price: "₹22",
       image: "https://miaoda-site-img.s3cdn.medo.dev/images/9b57e38a-f6f8-4222-a29f-88ae745c02ab.jpg",
       category: "main",
       rating: 4.6,
@@ -97,7 +96,7 @@ const Menu: React.FC = () => {
       id: 8,
       name: "Lobster Thermidor",
       description: "Luxury lobster in creamy brandy sauce",
-      price: "$45",
+      price: "₹45",
       image: "https://miaoda-site-img.s3cdn.medo.dev/images/84953e12-8c10-42cd-88d4-35fed0671d18.jpg",
       category: "main",
       rating: 5.0,
@@ -106,7 +105,7 @@ const Menu: React.FC = () => {
       id: 9,
       name: "Gourmet Burger",
       description: "Premium beef burger with artisan fries",
-      price: "$18",
+      price: "₹18",
       image: "https://miaoda-site-img.s3cdn.medo.dev/images/ba5ed6aa-b5b0-4107-b285-7fa31d48ad2d.jpg",
       category: "main",
       rating: 4.7,
@@ -115,7 +114,7 @@ const Menu: React.FC = () => {
       id: 10,
       name: "Shrimp Scampi",
       description: "Garlic butter shrimp with pasta",
-      price: "$26",
+      price: "₹26",
       image: "https://miaoda-site-img.s3cdn.medo.dev/images/174e805c-1bc6-443f-a41f-684cba8e509c.jpg",
       category: "main",
       rating: 4.8,
@@ -128,7 +127,6 @@ const Menu: React.FC = () => {
 
   return (
     <div className="min-h-screen pt-32 pb-20">
-      <BackgroundVideo opacity={0.15} />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -137,7 +135,7 @@ const Menu: React.FC = () => {
           className="text-center mb-12"
         >
           <h1 className="text-5xl xl:text-6xl font-bold mb-4 max-sm:text-4xl">
-            Our <span className="gradient-text">Menu</span>
+            <span className="text-white">Our</span> <span className="gradient-text">Menu</span>
           </h1>
           <p className="text-xl text-muted-foreground max-sm:text-lg">
             Explore our delicious selection of dishes

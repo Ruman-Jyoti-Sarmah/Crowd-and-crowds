@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import { ArrowRight, Star, Clock, Award, ChefHat } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import BackgroundVideo from "@/components/common/BackgroundVideo";
 
 const Home: React.FC = () => {
   const features = [
@@ -34,26 +33,25 @@ const Home: React.FC = () => {
     {
       name: "Grilled Steak",
       image: "https://miaoda-site-img.s3cdn.medo.dev/images/601295dc-01ca-49e7-ace4-c408689216b6.jpg",
-      price: "$32",
+      price: "₹32",
       rating: 4.9,
     },
     {
       name: "Fresh Sushi Platter",
       image: "https://miaoda-site-img.s3cdn.medo.dev/images/69177eab-b3e7-4d25-87f1-96f5b9960f9a.jpg",
-      price: "$28",
+      price: "₹28",
       rating: 4.8,
     },
     {
       name: "Pasta Carbonara",
       image: "https://miaoda-site-img.s3cdn.medo.dev/images/6a8c51fc-e57d-4019-8f5a-261ad58864e1.jpg",
-      price: "$24",
+      price: "₹24",
       rating: 4.7,
     },
   ];
 
   return (
     <div className="min-h-screen">
-      <BackgroundVideo opacity={0.2} />
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
         <div className="absolute inset-0 bg-[image:var(--gradient-hero)] opacity-50" />
         
@@ -101,7 +99,7 @@ const Home: React.FC = () => {
             </motion.h1>
             
             <motion.p
-              className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto max-sm:text-lg"
+              className="text-xl md:text-2xl text-white mb-8 max-w-3xl mx-auto max-sm:text-lg"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
@@ -240,10 +238,10 @@ const Home: React.FC = () => {
               <h2 className="text-4xl xl:text-5xl font-bold mb-6 max-sm:text-3xl">
                 Where Passion Meets <span className="gradient-text">Flavor</span>
               </h2>
-              <p className="text-lg text-muted-foreground mb-6">
+              <p className="text-lg text-white mb-6">
                 At Modern Restaurant, we believe that great food is an art form. Our chefs combine traditional techniques with innovative approaches to create dishes that delight all your senses.
               </p>
-              <p className="text-lg text-muted-foreground mb-8">
+              <p className="text-lg text-white mb-8">
                 Every ingredient is carefully selected, every dish thoughtfully prepared, and every meal served with genuine hospitality.
               </p>
               <Button asChild size="lg">
